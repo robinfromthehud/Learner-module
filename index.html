@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Teacher Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Student Dashboard</h1>
+                <div class="header-actions">
+                    <button id="backBtn" class="btn btn--outline hidden">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5m7-7-7 7 7 7"/>
+                        </svg>
+                        Back to Students
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content container">
+        <!-- Students List View -->
+        <div id="studentsListView" class="view">
+            <div class="view-header">
+                <h2>All Students</h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search students...">
+                </div>
+            </div>
+            
+            <div id="studentsGrid" class="students-grid">
+                <!-- Student cards will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Student Detail View -->
+        <div id="studentDetailView" class="view hidden">
+            <!-- Student Profile Header -->
+            <div id="studentProfile" class="student-profile card">
+                <!-- Profile content will be inserted here -->
+            </div>
+
+            <!-- Navigation tabs -->
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="academic">Academic</button>
+                    <button class="tab-btn" data-tab="engagement">Engagement</button>
+                    <button class="tab-btn" data-tab="cognitive">Cognitive Profile</button>
+                    <button class="tab-btn" data-tab="feedback">Feedback Response</button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="tabs-content">
+                    <!-- Academic Tab -->
+                    <div id="academicTab" class="tab-content active">
+                        <div id="coursesContainer" class="courses-container">
+                            <!-- Course cards will be inserted here -->
+                        </div>
+                    </div>
+
+                    <!-- Engagement Tab -->
+                    <div id="engagementTab" class="tab-content">
+                        <div class="charts-grid">
+                            <div class="chart-card card">
+                                <div class="card__body">
+                                    <h3>Platform Engagement</h3>
+                                    <canvas id="engagementChart" height="300"></canvas>
+                                </div>
+                            </div>
+                            <div class="chart-card card">
+                                <div class="card__body">
+                                    <h3>Content Interaction</h3>
+                                    <canvas id="contentChart" height="300"></canvas>
+                                </div>
+                            </div>
+                            <div class="chart-card card">
+                                <div class="card__body">
+                                    <h3>Session Analytics</h3>
+                                    <canvas id="sessionChart" height="300"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cognitive Profile Tab -->
+                    <div id="cognitiveTab" class="tab-content">
+                        <div class="info-cards">
+                            <div class="info-card card">
+                                <div class="card__body">
+                                    <h3>Learning Preferences</h3>
+                                    <div id="learningPreferences" class="key-value-list">
+                                        <!-- Learning preferences will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-card card">
+                                <div class="card__body">
+                                    <h3>Processing Speed</h3>
+                                    <div id="processingSpeed" class="key-value-list">
+                                        <!-- Processing speed will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Response Tab -->
+                    <div id="feedbackTab" class="tab-content">
+                        <div class="info-cards">
+                            <div class="info-card card">
+                                <div class="card__body">
+                                    <h3>Receptivity</h3>
+                                    <div id="receptivity" class="key-value-list">
+                                        <!-- Receptivity info will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-card card">
+                                <div class="card__body">
+                                    <h3>Coaching Integration</h3>
+                                    <div id="coachingIntegration" class="key-value-list">
+                                        <!-- Coaching integration will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-card card">
+                                <div class="card__body">
+                                    <h3>Adaptation Rate</h3>
+                                    <div id="adaptationRate" class="key-value-list">
+                                        <!-- Adaptation rate will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast hidden">
+        <div class="toast-content">
+            <span id="toastMessage"></span>
+            <button id="toastClose" class="toast-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

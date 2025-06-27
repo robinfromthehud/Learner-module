@@ -1,0 +1,2505 @@
+[
+  {
+    "studentId": "asmit_kaur_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Asmit Kaur",
+      "age": 20,
+      "gender": "Female",
+      "location": {
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "educationLevel": "Postgraduate",
+      "institution": "IIT Delhi"
+    },
+    "professionalInformation": {
+      "currentRole": "Student",
+      "organization": "TechSolutions Pvt. Ltd.",
+      "industry": "Healthcare",
+      "experienceYears": 3,
+      "skills": [
+        "Python",
+        "Data Science",
+        "SQL"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "In Progress",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 28,
+        "modules": {
+          "Module-1": {
+            "title": "Deep Learning",
+            "progress": 37,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Unsupervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "labs": [
+                    94
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    83,
+                    87
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    77,
+                    92
+                  ],
+                  "labs": [
+                    93
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Data Analytics",
+            "progress": 85,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    89,
+                    79
+                  ],
+                  "labs": [
+                    100
+                  ],
+                  "assignments": [
+                    95
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Data Preprocessing",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    100
+                  ],
+                  "assignments": [
+                    78,
+                    86
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Basics",
+                "status": "In Progress",
+                "activities": {
+                  "assignments": [
+                    78
+                  ]
+                }
+              },
+              "Sub-Module 4": {
+                "title": "Model Evaluation",
+                "status": "In Progress",
+                "activities": {}
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 2,
+          "weekly Total": 16,
+          "longest Streak": 20,
+          "current Streak": 7
+        },
+        "session Duration": {
+          "average Minutes": 50,
+          "total Hours": 46,
+          "longest Session": 116
+        },
+        "Preffered Times": [
+          "evening"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 51,
+          "completion Rate": 84,
+          "average Watch Time": 18
+        },
+        "documents Accessed": 41,
+        "forum Posts": 8,
+        "discussion Contributions": {
+          "posts Created": 5,
+          "replies Given": 30,
+          "likes Received": 32,
+          "quality Score": 4.2
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 15,
+        "late Submissions": 1,
+        "punctuality Score": 95
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "visual",
+        "Preferred Tone": "Casual",
+        "response Format": "Detailed with examples"
+      },
+      "processing Speed": {
+        "reading Speed": 209,
+        "decision Making Speed": "moderate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "very open",
+        "feedback Seeking": "reactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 88,
+        "engagement Level": "highly engaged",
+        "goal Alignment": "partially aligned",
+        "progress Reporting": "detailed"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "gradual",
+        "strategy Modification": "flexible",
+        "habit Formation": "moderate",
+        "sustainability Rate": 89
+      }
+    }
+  },
+  {
+    "studentId": "rahul_sharma_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Rahul Sharma",
+      "age": 25,
+      "gender": "Female",
+      "location": {
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India"
+      },
+      "educationLevel": "Graduate",
+      "institution": "Panjab University"
+    },
+    "professionalInformation": {
+      "currentRole": "Student",
+      "organization": "TechSolutions Pvt. Ltd.",
+      "industry": "Finance",
+      "experienceYears": 0,
+      "skills": [
+        "Java",
+        "Data Science",
+        "AWS",
+        "Machine Learning",
+        "JavaScript",
+        "React"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Completed",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 86,
+        "modules": {
+          "Module-1": {
+            "title": "Introduction to AI",
+            "progress": 46,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Data Preprocessing",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    90,
+                    72,
+                    88
+                  ],
+                  "assignments": [
+                    93,
+                    79
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Supervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    79,
+                    84,
+                    71
+                  ],
+                  "assignments": [
+                    81,
+                    74
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Data Preprocessing",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    90
+                  ],
+                  "labs": [
+                    94,
+                    79,
+                    86
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Data Analytics",
+            "progress": 55,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Ethics",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    91,
+                    84
+                  ],
+                  "labs": [
+                    88,
+                    97,
+                    81
+                  ],
+                  "assignments": [
+                    71
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    85,
+                    70,
+                    77
+                  ],
+                  "labs": [
+                    86,
+                    93,
+                    75
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    81,
+                    96
+                  ],
+                  "assignments": [
+                    77,
+                    78
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 3,
+          "weekly Total": 13,
+          "longest Streak": 21,
+          "current Streak": 12
+        },
+        "session Duration": {
+          "average Minutes": 42,
+          "total Hours": 78,
+          "longest Session": 76
+        },
+        "Preffered Times": [
+          "night"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 44,
+          "completion Rate": 76,
+          "average Watch Time": 25
+        },
+        "documents Accessed": 50,
+        "forum Posts": 7,
+        "discussion Contributions": {
+          "posts Created": 9,
+          "replies Given": 19,
+          "likes Received": 48,
+          "quality Score": 4.3
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 20,
+        "late Submissions": 2,
+        "punctuality Score": 90
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "reading/writing",
+        "Preferred Tone": "Formal",
+        "response Format": "Brief and concise"
+      },
+      "processing Speed": {
+        "reading Speed": 303,
+        "decision Making Speed": "deliberate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "very open",
+        "feedback Seeking": "passive"
+      },
+      "coaching Integration": {
+        "session Attendance": 86,
+        "engagement Level": "moderately engaged",
+        "goal Alignment": "needs alignment",
+        "progress Reporting": "basic"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "moderate",
+        "strategy Modification": "moderate",
+        "habit Formation": "strong",
+        "sustainability Rate": 85
+      }
+    }
+  },
+  {
+    "studentId": "priya_patel_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Priya Patel",
+      "age": 24,
+      "gender": "Female",
+      "location": {
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "educationLevel": "Postgraduate",
+      "institution": "Mumbai University"
+    },
+    "professionalInformation": {
+      "currentRole": "Data Analyst Intern",
+      "organization": "TechSolutions Pvt. Ltd.",
+      "industry": "E-commerce",
+      "experienceYears": 0,
+      "skills": [
+        "Data Science",
+        "Machine Learning",
+        "React",
+        "Java"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Not Started",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 82,
+        "modules": {
+          "Module-1": {
+            "title": "Data Analytics",
+            "progress": 93,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Data Preprocessing",
+                "status": "In Progress",
+                "activities": {
+                  "labs": [
+                    76,
+                    91
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Neural Networks",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    89,
+                    93
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Data Analytics",
+            "progress": 34,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Basics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    92,
+                    89
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    87
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Machine Learning Overview",
+                "status": "In Progress",
+                "activities": {
+                  "assignments": [
+                    88,
+                    95
+                  ]
+                }
+              },
+              "Sub-Module 4": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    90,
+                    77,
+                    75
+                  ],
+                  "labs": [
+                    85
+                  ],
+                  "assignments": [
+                    75
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "A-"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 3,
+          "weekly Total": 15,
+          "longest Streak": 16,
+          "current Streak": 18
+        },
+        "session Duration": {
+          "average Minutes": 37,
+          "total Hours": 67,
+          "longest Session": 119
+        },
+        "Preffered Times": [
+          "night"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 66,
+          "completion Rate": 75,
+          "average Watch Time": 24
+        },
+        "documents Accessed": 53,
+        "forum Posts": 7,
+        "discussion Contributions": {
+          "posts Created": 6,
+          "replies Given": 27,
+          "likes Received": 42,
+          "quality Score": 4.7
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 17,
+        "late Submissions": 1,
+        "punctuality Score": 91
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "visual",
+        "Preferred Tone": "Casual",
+        "response Format": "Step-by-step"
+      },
+      "processing Speed": {
+        "reading Speed": 338,
+        "decision Making Speed": "quick"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "open",
+        "feedback Seeking": "reactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 82,
+        "engagement Level": "engaged",
+        "goal Alignment": "partially aligned",
+        "progress Reporting": "moderate"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "moderate",
+        "strategy Modification": "moderate",
+        "habit Formation": "weak",
+        "sustainability Rate": 91
+      }
+    }
+  },
+  {
+    "studentId": "arjun_singh_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Arjun Singh",
+      "age": 22,
+      "gender": "Female",
+      "location": {
+        "city": "Pune",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "educationLevel": "Undergraduate",
+      "institution": "Panjab University"
+    },
+    "professionalInformation": {
+      "currentRole": "Student",
+      "organization": "TechSolutions Pvt. Ltd.",
+      "industry": "Education",
+      "experienceYears": 2,
+      "skills": [
+        "AWS",
+        "Machine Learning",
+        "SQL",
+        "MongoDB",
+        "Python",
+        "Java"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Completed",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 71,
+        "modules": {
+          "Module-1": {
+            "title": "Machine Learning Fundamentals",
+            "progress": 69,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Ethics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    71,
+                    94,
+                    84
+                  ],
+                  "assignments": [
+                    90,
+                    71
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Data Preprocessing",
+                "status": "In Progress",
+                "activities": {}
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Machine Learning Fundamentals",
+            "progress": 100,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Machine Learning Overview",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    73,
+                    94,
+                    95
+                  ],
+                  "labs": [
+                    80,
+                    88
+                  ],
+                  "assignments": [
+                    94,
+                    93
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "AI Basics",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    78,
+                    84,
+                    95
+                  ],
+                  "assignments": [
+                    78,
+                    74
+                  ]
+                }
+              }
+            }
+          },
+          "Module-3": {
+            "title": "Computer Vision",
+            "progress": 63,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Basics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    89
+                  ],
+                  "assignments": [
+                    92
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Data Preprocessing",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    94,
+                    89
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Machine Learning Overview",
+                "status": "In Progress",
+                "activities": {
+                  "labs": [
+                    94,
+                    97,
+                    86
+                  ]
+                }
+              }
+            }
+          },
+          "Module-4": {
+            "title": "Computer Vision",
+            "progress": 48,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    86,
+                    81,
+                    96
+                  ],
+                  "assignments": [
+                    85
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "AI Basics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    90,
+                    75
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 2,
+          "weekly Total": 23,
+          "longest Streak": 23,
+          "current Streak": 15
+        },
+        "session Duration": {
+          "average Minutes": 46,
+          "total Hours": 67,
+          "longest Session": 82
+        },
+        "Preffered Times": [
+          "evening"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 63,
+          "completion Rate": 72,
+          "average Watch Time": 20
+        },
+        "documents Accessed": 50,
+        "forum Posts": 11,
+        "discussion Contributions": {
+          "posts Created": 3,
+          "replies Given": 15,
+          "likes Received": 38,
+          "quality Score": 4.4
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 11,
+        "late Submissions": 1,
+        "punctuality Score": 90
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "kinesthetic",
+        "Preferred Tone": "Casual",
+        "response Format": "Brief and concise"
+      },
+      "processing Speed": {
+        "reading Speed": 349,
+        "decision Making Speed": "deliberate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "very open",
+        "feedback Seeking": "passive"
+      },
+      "coaching Integration": {
+        "session Attendance": 90,
+        "engagement Level": "engaged",
+        "goal Alignment": "aligned",
+        "progress Reporting": "detailed"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "gradual",
+        "strategy Modification": "moderate",
+        "habit Formation": "strong",
+        "sustainability Rate": 72
+      }
+    }
+  },
+  {
+    "studentId": "sneha_reddy_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Sneha Reddy",
+      "age": 20,
+      "gender": "Male",
+      "location": {
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "country": "India"
+      },
+      "educationLevel": "Graduate",
+      "institution": "Mumbai University"
+    },
+    "professionalInformation": {
+      "currentRole": "Software Developer Intern",
+      "organization": "TechSolutions Pvt. Ltd.",
+      "industry": "Healthcare",
+      "experienceYears": 3,
+      "skills": [
+        "MongoDB",
+        "Java",
+        "Python",
+        "SQL"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "In Progress",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 35,
+        "modules": {
+          "Module-1": {
+            "title": "Deep Learning",
+            "progress": 64,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {}
+              },
+              "Sub-Module 2": {
+                "title": "Data Preprocessing",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    95
+                  ],
+                  "assignments": [
+                    90,
+                    94
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "assignments": [
+                    80
+                  ]
+                }
+              },
+              "Sub-Module 4": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    94,
+                    95
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Deep Learning",
+            "progress": 51,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Machine Learning Overview",
+                "status": "In Progress",
+                "activities": {}
+              },
+              "Sub-Module 2": {
+                "title": "Machine Learning Overview",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    86,
+                    84
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Model Evaluation",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    82,
+                    82,
+                    71
+                  ]
+                }
+              }
+            }
+          },
+          "Module-3": {
+            "title": "Machine Learning Fundamentals",
+            "progress": 33,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Unsupervised Learning",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    98,
+                    86,
+                    77
+                  ],
+                  "assignments": [
+                    83,
+                    93
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "AI Ethics",
+                "status": "Not Started",
+                "activities": {}
+              },
+              "Sub-Module 3": {
+                "title": "Supervised Learning",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    76,
+                    80
+                  ]
+                }
+              }
+            }
+          },
+          "Module-4": {
+            "title": "Deep Learning",
+            "progress": 63,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Unsupervised Learning",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    90,
+                    96,
+                    94
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "AI Basics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    75
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    94,
+                    84,
+                    74
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B-"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 3,
+          "weekly Total": 18,
+          "longest Streak": 23,
+          "current Streak": 17
+        },
+        "session Duration": {
+          "average Minutes": 34,
+          "total Hours": 32,
+          "longest Session": 75
+        },
+        "Preffered Times": [
+          "evening"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 44,
+          "completion Rate": 95,
+          "average Watch Time": 21
+        },
+        "documents Accessed": 42,
+        "forum Posts": 12,
+        "discussion Contributions": {
+          "posts Created": 3,
+          "replies Given": 20,
+          "likes Received": 41,
+          "quality Score": 4.5
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 20,
+        "late Submissions": 0,
+        "punctuality Score": 93
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "reading/writing",
+        "Preferred Tone": "Academic",
+        "response Format": "Brief and concise"
+      },
+      "processing Speed": {
+        "reading Speed": 259,
+        "decision Making Speed": "quick"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "open",
+        "feedback Seeking": "proactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 90,
+        "engagement Level": "moderately engaged",
+        "goal Alignment": "partially aligned",
+        "progress Reporting": "moderate"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "gradual",
+        "strategy Modification": "flexible",
+        "habit Formation": "moderate",
+        "sustainability Rate": 84
+      }
+    }
+  },
+  {
+    "studentId": "vikram_kumar_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Vikram Kumar",
+      "age": 22,
+      "gender": "Female",
+      "location": {
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India"
+      },
+      "educationLevel": "Undergraduate",
+      "institution": "Panjab University"
+    },
+    "professionalInformation": {
+      "currentRole": "Software Developer Intern",
+      "organization": "InnovateLabs",
+      "industry": "Education",
+      "experienceYears": 3,
+      "skills": [
+        "Node.js",
+        "Data Science",
+        "JavaScript",
+        "Machine Learning",
+        "Python",
+        "React"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Completed",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 63,
+        "modules": {
+          "Module-1": {
+            "title": "Deep Learning",
+            "progress": 53,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Data Preprocessing",
+                "status": "Completed",
+                "activities": {
+                  "assignments": [
+                    73,
+                    79
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "assignments": [
+                    80,
+                    85
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Machine Learning Overview",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    80,
+                    81
+                  ]
+                }
+              },
+              "Sub-Module 4": {
+                "title": "Supervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    70,
+                    85,
+                    87
+                  ],
+                  "assignments": [
+                    76,
+                    71
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Computer Vision",
+            "progress": 53,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    90,
+                    71,
+                    82
+                  ],
+                  "labs": [
+                    93,
+                    78,
+                    85
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    91,
+                    87
+                  ],
+                  "labs": [
+                    91,
+                    99,
+                    87
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Ethics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    71,
+                    77
+                  ]
+                }
+              }
+            }
+          },
+          "Module-3": {
+            "title": "Data Analytics",
+            "progress": 79,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Machine Learning Overview",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    83,
+                    81,
+                    89
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Machine Learning Overview",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    88,
+                    100,
+                    93
+                  ],
+                  "assignments": [
+                    71
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Ethics",
+                "status": "Completed",
+                "activities": {
+                  "assignments": [
+                    88
+                  ]
+                }
+              },
+              "Sub-Module 4": {
+                "title": "AI Ethics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    94,
+                    73,
+                    89
+                  ],
+                  "assignments": [
+                    88
+                  ]
+                }
+              }
+            }
+          },
+          "Module-4": {
+            "title": "Deep Learning",
+            "progress": 62,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    85
+                  ],
+                  "labs": [
+                    78,
+                    95
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Supervised Learning",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    83,
+                    81,
+                    82
+                  ],
+                  "assignments": [
+                    80,
+                    89
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "AI Ethics",
+                "status": "Not Started",
+                "activities": {
+                  "assignments": [
+                    83,
+                    85
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 4,
+          "weekly Total": 15,
+          "longest Streak": 28,
+          "current Streak": 13
+        },
+        "session Duration": {
+          "average Minutes": 39,
+          "total Hours": 72,
+          "longest Session": 113
+        },
+        "Preffered Times": [
+          "night"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 70,
+          "completion Rate": 93,
+          "average Watch Time": 18
+        },
+        "documents Accessed": 66,
+        "forum Posts": 12,
+        "discussion Contributions": {
+          "posts Created": 3,
+          "replies Given": 20,
+          "likes Received": 37,
+          "quality Score": 3.8
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 19,
+        "late Submissions": 1,
+        "punctuality Score": 89
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "auditory",
+        "Preferred Tone": "Casual",
+        "response Format": "Step-by-step"
+      },
+      "processing Speed": {
+        "reading Speed": 345,
+        "decision Making Speed": "deliberate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "open",
+        "feedback Seeking": "reactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 89,
+        "engagement Level": "highly engaged",
+        "goal Alignment": "needs alignment",
+        "progress Reporting": "basic"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "moderate",
+        "strategy Modification": "moderate",
+        "habit Formation": "strong",
+        "sustainability Rate": 77
+      }
+    }
+  },
+  {
+    "studentId": "ananya_gupta_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Ananya Gupta",
+      "age": 25,
+      "gender": "Male",
+      "location": {
+        "city": "Chandigarh",
+        "state": "Punjab",
+        "country": "India"
+      },
+      "educationLevel": "Graduate",
+      "institution": "Anna University"
+    },
+    "professionalInformation": {
+      "currentRole": "Software Developer Intern",
+      "organization": "DataCorp",
+      "industry": "Education",
+      "experienceYears": 1,
+      "skills": [
+        "React",
+        "MongoDB",
+        "AWS"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Completed",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 56,
+        "modules": {
+          "Module-1": {
+            "title": "Introduction to AI",
+            "progress": 35,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Neural Networks",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    83
+                  ],
+                  "labs": [
+                    90,
+                    93,
+                    89
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "AI Ethics",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    76
+                  ],
+                  "labs": [
+                    77,
+                    97,
+                    89
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Deep Learning",
+            "progress": 98,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Machine Learning Overview",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    100
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    82,
+                    77
+                  ],
+                  "assignments": [
+                    79,
+                    92
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "A"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 3,
+          "weekly Total": 13,
+          "longest Streak": 30,
+          "current Streak": 14
+        },
+        "session Duration": {
+          "average Minutes": 33,
+          "total Hours": 36,
+          "longest Session": 72
+        },
+        "Preffered Times": [
+          "evening"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 46,
+          "completion Rate": 79,
+          "average Watch Time": 24
+        },
+        "documents Accessed": 70,
+        "forum Posts": 14,
+        "discussion Contributions": {
+          "posts Created": 6,
+          "replies Given": 29,
+          "likes Received": 49,
+          "quality Score": 4.5
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 16,
+        "late Submissions": 1,
+        "punctuality Score": 93
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "visual",
+        "Preferred Tone": "Formal",
+        "response Format": "Detailed with examples"
+      },
+      "processing Speed": {
+        "reading Speed": 345,
+        "decision Making Speed": "deliberate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "open",
+        "feedback Seeking": "proactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 99,
+        "engagement Level": "engaged",
+        "goal Alignment": "partially aligned",
+        "progress Reporting": "detailed"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "rapid",
+        "strategy Modification": "rigid",
+        "habit Formation": "strong",
+        "sustainability Rate": 88
+      }
+    }
+  },
+  {
+    "studentId": "rohan_joshi_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Rohan Joshi",
+      "age": 22,
+      "gender": "Female",
+      "location": {
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "country": "India"
+      },
+      "educationLevel": "Undergraduate",
+      "institution": "Anna University"
+    },
+    "professionalInformation": {
+      "currentRole": "Research Assistant",
+      "organization": "DataCorp",
+      "industry": "Finance",
+      "experienceYears": 1,
+      "skills": [
+        "Machine Learning",
+        "AWS",
+        "Node.js",
+        "React",
+        "MongoDB"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Completed",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 90,
+        "modules": {
+          "Module-1": {
+            "title": "Data Analytics",
+            "progress": 70,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Unsupervised Learning",
+                "status": "In Progress",
+                "activities": {}
+              },
+              "Sub-Module 2": {
+                "title": "Model Evaluation",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    74,
+                    79,
+                    92
+                  ],
+                  "labs": [
+                    78,
+                    99
+                  ],
+                  "assignments": [
+                    89
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Natural Language Processing",
+            "progress": 71,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Unsupervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    86
+                  ],
+                  "labs": [
+                    86,
+                    77,
+                    100
+                  ],
+                  "assignments": [
+                    91
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Model Evaluation",
+                "status": "Not Started",
+                "activities": {
+                  "assignments": [
+                    72,
+                    74
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Unsupervised Learning",
+                "status": "In Progress",
+                "activities": {}
+              },
+              "Sub-Module 4": {
+                "title": "Neural Networks",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    92
+                  ],
+                  "labs": [
+                    82
+                  ],
+                  "assignments": [
+                    77
+                  ]
+                }
+              }
+            }
+          },
+          "Module-3": {
+            "title": "Computer Vision",
+            "progress": 77,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Neural Networks",
+                "status": "Not Started",
+                "activities": {}
+              },
+              "Sub-Module 2": {
+                "title": "Model Evaluation",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    72
+                  ],
+                  "labs": [
+                    87,
+                    82,
+                    93
+                  ],
+                  "assignments": [
+                    74
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Neural Networks",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    72
+                  ],
+                  "labs": [
+                    98
+                  ],
+                  "assignments": [
+                    82,
+                    73
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B-"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 1,
+          "weekly Total": 20,
+          "longest Streak": 16,
+          "current Streak": 6
+        },
+        "session Duration": {
+          "average Minutes": 42,
+          "total Hours": 70,
+          "longest Session": 63
+        },
+        "Preffered Times": [
+          "afternoon"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 41,
+          "completion Rate": 89,
+          "average Watch Time": 24
+        },
+        "documents Accessed": 54,
+        "forum Posts": 5,
+        "discussion Contributions": {
+          "posts Created": 4,
+          "replies Given": 17,
+          "likes Received": 21,
+          "quality Score": 4.0
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 15,
+        "late Submissions": 3,
+        "punctuality Score": 97
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "auditory",
+        "Preferred Tone": "Casual",
+        "response Format": "Detailed with examples"
+      },
+      "processing Speed": {
+        "reading Speed": 238,
+        "decision Making Speed": "quick"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "moderately open",
+        "feedback Seeking": "proactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 81,
+        "engagement Level": "moderately engaged",
+        "goal Alignment": "needs alignment",
+        "progress Reporting": "moderate"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "moderate",
+        "strategy Modification": "rigid",
+        "habit Formation": "weak",
+        "sustainability Rate": 70
+      }
+    }
+  },
+  {
+    "studentId": "kavya_nair_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Kavya Nair",
+      "age": 25,
+      "gender": "Female",
+      "location": {
+        "city": "Chandigarh",
+        "state": "Punjab",
+        "country": "India"
+      },
+      "educationLevel": "Postgraduate",
+      "institution": "Anna University"
+    },
+    "professionalInformation": {
+      "currentRole": "Research Assistant",
+      "organization": "TechSolutions Pvt. Ltd.",
+      "industry": "E-commerce",
+      "experienceYears": 0,
+      "skills": [
+        "Java",
+        "Data Science",
+        "MongoDB",
+        "Node.js",
+        "AWS",
+        "React"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "Not Started",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 69,
+        "modules": {
+          "Module-1": {
+            "title": "Introduction to AI",
+            "progress": 75,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    75,
+                    72,
+                    78
+                  ],
+                  "assignments": [
+                    95,
+                    75
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Neural Networks",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    71,
+                    85
+                  ],
+                  "labs": [
+                    78
+                  ],
+                  "assignments": [
+                    88,
+                    70
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Machine Learning Fundamentals",
+            "progress": 40,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Basics",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    81
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Neural Networks",
+                "status": "Not Started",
+                "activities": {
+                  "assignments": [
+                    95
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    90
+                  ],
+                  "labs": [
+                    85,
+                    88
+                  ]
+                }
+              }
+            }
+          },
+          "Module-3": {
+            "title": "Deep Learning",
+            "progress": 95,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Model Evaluation",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    87,
+                    74
+                  ],
+                  "assignments": [
+                    76,
+                    93
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Data Preprocessing",
+                "status": "Completed",
+                "activities": {
+                  "assignments": [
+                    85
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Supervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    80
+                  ],
+                  "assignments": [
+                    76
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B-"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 4,
+          "weekly Total": 22,
+          "longest Streak": 29,
+          "current Streak": 11
+        },
+        "session Duration": {
+          "average Minutes": 35,
+          "total Hours": 79,
+          "longest Session": 98
+        },
+        "Preffered Times": [
+          "morning"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 48,
+          "completion Rate": 82,
+          "average Watch Time": 20
+        },
+        "documents Accessed": 40,
+        "forum Posts": 20,
+        "discussion Contributions": {
+          "posts Created": 8,
+          "replies Given": 21,
+          "likes Received": 38,
+          "quality Score": 4.3
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 14,
+        "late Submissions": 0,
+        "punctuality Score": 90
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "kinesthetic",
+        "Preferred Tone": "Casual",
+        "response Format": "Step-by-step"
+      },
+      "processing Speed": {
+        "reading Speed": 269,
+        "decision Making Speed": "deliberate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "very open",
+        "feedback Seeking": "reactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 84,
+        "engagement Level": "moderately engaged",
+        "goal Alignment": "aligned",
+        "progress Reporting": "moderate"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "gradual",
+        "strategy Modification": "moderate",
+        "habit Formation": "strong",
+        "sustainability Rate": 91
+      }
+    }
+  },
+  {
+    "studentId": "adi_mehta_2025",
+    "metadata": {
+      "createdAt": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "lastUpdated": {
+        "$date": "2025-06-26T10:55:00Z"
+      },
+      "schemaVersion": "1.0",
+      "lmsVersion": "2024.1"
+    },
+    "personalInformation": {
+      "name": "Adi Mehta",
+      "age": 23,
+      "gender": "Female",
+      "location": {
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "country": "India"
+      },
+      "educationLevel": "Postgraduate",
+      "institution": "IIT Delhi"
+    },
+    "professionalInformation": {
+      "currentRole": "Research Assistant",
+      "organization": "EduTech India",
+      "industry": "Finance",
+      "experienceYears": 1,
+      "skills": [
+        "JavaScript",
+        "Python",
+        "SQL",
+        "AWS",
+        "React"
+      ]
+    },
+    "Courses": {
+      "Foundations-of-AI": {
+        "status": "In Progress",
+        "startDate": {
+          "$date": "2025-05-01T00:00:00Z"
+        },
+        "progress": 69,
+        "modules": {
+          "Module-1": {
+            "title": "Computer Vision",
+            "progress": 51,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "Model Evaluation",
+                "status": "Completed",
+                "activities": {
+                  "assignments": [
+                    81
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "AI Ethics",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    75
+                  ],
+                  "labs": [
+                    79,
+                    91
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Unsupervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    74,
+                    77
+                  ],
+                  "labs": [
+                    89,
+                    99
+                  ],
+                  "assignments": [
+                    79
+                  ]
+                }
+              },
+              "Sub-Module 4": {
+                "title": "Data Preprocessing",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    99
+                  ],
+                  "assignments": [
+                    78,
+                    83
+                  ]
+                }
+              }
+            }
+          },
+          "Module-2": {
+            "title": "Natural Language Processing",
+            "progress": 55,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Ethics",
+                "status": "Not Started",
+                "activities": {
+                  "quizzes": [
+                    70
+                  ],
+                  "labs": [
+                    86,
+                    92
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Supervised Learning",
+                "status": "In Progress",
+                "activities": {
+                  "labs": [
+                    94,
+                    87,
+                    87
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Machine Learning Overview",
+                "status": "In Progress",
+                "activities": {
+                  "quizzes": [
+                    85,
+                    88,
+                    75
+                  ],
+                  "labs": [
+                    79
+                  ],
+                  "assignments": [
+                    95
+                  ]
+                }
+              }
+            }
+          },
+          "Module-3": {
+            "title": "Deep Learning",
+            "progress": 69,
+            "lastActivity": {
+              "$date": "2025-06-25T18:30:00Z"
+            },
+            "subModules": {
+              "Sub-Module 1": {
+                "title": "AI Ethics",
+                "status": "Not Started",
+                "activities": {
+                  "labs": [
+                    84
+                  ],
+                  "assignments": [
+                    92,
+                    88
+                  ]
+                }
+              },
+              "Sub-Module 2": {
+                "title": "Supervised Learning",
+                "status": "Completed",
+                "activities": {
+                  "quizzes": [
+                    79
+                  ]
+                }
+              },
+              "Sub-Module 3": {
+                "title": "Supervised Learning",
+                "status": "Completed",
+                "activities": {
+                  "labs": [
+                    78
+                  ],
+                  "assignments": [
+                    95
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "Course Project Grade": [
+        "B"
+      ]
+    },
+    "engagement Metrics": {
+      "platform Engagement": {
+        "login frequency": {
+          "daily Average": 1,
+          "weekly Total": 20,
+          "longest Streak": 20,
+          "current Streak": 11
+        },
+        "session Duration": {
+          "average Minutes": 31,
+          "total Hours": 61,
+          "longest Session": 119
+        },
+        "Preffered Times": [
+          "morning"
+        ],
+        "last Activity": {
+          "$date": "2025-06-26T09:40:00Z"
+        }
+      },
+      "content Interaction": {
+        "videos Watched": {
+          "total": 65,
+          "completion Rate": 78,
+          "average Watch Time": 20
+        },
+        "documents Accessed": 33,
+        "forum Posts": 16,
+        "discussion Contributions": {
+          "posts Created": 3,
+          "replies Given": 22,
+          "likes Received": 38,
+          "quality Score": 4.6
+        }
+      },
+      "assignment Submission": {
+        "on Time Submissions": 13,
+        "late Submissions": 1,
+        "punctuality Score": 98
+      }
+    },
+    "cognitive Profile": {
+      "learning Preferences": {
+        "primary Style": "auditory",
+        "Preferred Tone": "Academic",
+        "response Format": "Step-by-step"
+      },
+      "processing Speed": {
+        "reading Speed": 266,
+        "decision Making Speed": "deliberate"
+      }
+    },
+    "feedback Response": {
+      "receptivity": {
+        "openness Level": "very open",
+        "feedback Seeking": "proactive"
+      },
+      "coaching Integration": {
+        "session Attendance": 84,
+        "engagement Level": "highly engaged",
+        "goal Alignment": "needs alignment",
+        "progress Reporting": "moderate"
+      },
+      "adaptation Rate": {
+        "behavior Change Speed": "gradual",
+        "strategy Modification": "flexible",
+        "habit Formation": "weak",
+        "sustainability Rate": 79
+      }
+    }
+  }
+]
