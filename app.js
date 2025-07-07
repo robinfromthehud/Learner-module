@@ -126,7 +126,7 @@ const MOCK_STUDENT_DETAILS = {
             },
             "CourseProjectGrade": ["A-"]
         },
-        "engagement Metrics": {
+        "engagementMetrics": {
             "platform Engagement": {
                 "login frequency": {
                     "daily Average": 3,
@@ -161,6 +161,15 @@ const MOCK_STUDENT_DETAILS = {
                 "on Time Submissions": 15,
                 "late Submissions": 1,
                 "punctuality Score": 94
+            },
+            "dailyActivity": {
+                "2025-06-20": { "totalMinutes": 45, "sessions": 3 },
+                "2025-06-21": { "totalMinutes": 32, "sessions": 2 },
+                "2025-06-22": { "totalMinutes": 28, "sessions": 1 },
+                "2025-06-23": { "totalMinutes": 56, "sessions": 4 },
+                "2025-06-24": { "totalMinutes": 42, "sessions": 3 },
+                "2025-06-25": { "totalMinutes": 38, "sessions": 2 },
+                "2025-06-26": { "totalMinutes": 51, "sessions": 3 }
             }
         },
         "cognitive Profile": {
@@ -235,7 +244,7 @@ const MOCK_STUDENT_DETAILS = {
                 }
             }
         },
-        "engagement Metrics": {
+        "engagementMetrics": {
             "platform Engagement": {
                 "login frequency": {
                     "daily Average": 4,
@@ -255,6 +264,15 @@ const MOCK_STUDENT_DETAILS = {
                 },
                 "documents Accessed": 62,
                 "forum Posts": 18
+            },
+            "dailyActivity": {
+                "2025-06-20": { "totalMinutes": 45, "sessions": 3 },
+                "2025-06-21": { "totalMinutes": 32, "sessions": 2 },
+                "2025-06-22": { "totalMinutes": 28, "sessions": 1 },
+                "2025-06-23": { "totalMinutes": 56, "sessions": 4 },
+                "2025-06-24": { "totalMinutes": 42, "sessions": 3 },
+                "2025-06-25": { "totalMinutes": 38, "sessions": 2 },
+                "2025-06-26": { "totalMinutes": 51, "sessions": 3 }
             }
         },
         "cognitive Profile": {
@@ -296,6 +314,141 @@ const toastMessage = document.getElementById('toastMessage');
 const toastClose = document.getElementById('toastClose');
 
 // Utility functions
+
+// Add this to your MOCK_STUDENT_DETAILS for each student
+
+// Add these utility functions
+function getDateRange(days) {
+    const endDate = new Date();
+    const startDate = new Date();
+    startDate.setDate(endDate.getDate() - days);
+    return { startDate, endDate };
+}
+
+function formatDateForInput(date) {
+    return date.toISOString().split('T')[0];
+}
+
+function getDatesInRange(startDate, endDate) {
+    const dates = [];
+    let currentDate = new Date(startDate);
+    
+    while (currentDate <= endDate) {
+        dates.push(new Date(currentDate));
+        currentDate.setDate(currentDate.getDate() + 1);
+    }
+    
+    return dates;
+}
+
+// Add this function to render daily activity
+function renderDailyActivityChart(student, startDate, endDate) {
+    const dailyActivity = student['engagementMetrics']?.dailyActivity || {};
+    const ctx = document.getElementById('dailyActivityChart');
+    if (!ctx) return;
+    
+    // Destroy existing chart
+    if (charts.dailyActivity) {
+        charts.dailyActivity.destroy();
+    }
+    
+    // Filter activities within date range
+    const filteredActivities = {};
+    const datesInRange = getDatesInRange(startDate, endDate);
+    
+    datesInRange.forEach(date => {
+        const dateStr = formatDateForInput(date);
+        if (dailyActivity[dateStr]) {
+            filteredActivities[dateStr] = dailyActivity[dateStr];
+        } else {
+            filteredActivities[dateStr] = { 
+                totalMinutes: 0, 
+                sessions: 0,
+                videos: 0,
+                docs: 0
+            };
+        }
+    });
+    
+    // Prepare data for chart
+    const labels = Object.keys(filteredActivities).map(date => 
+        new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+    );
+    
+    // Calculate average session time
+    const totalMinutes = Object.values(filteredActivities).reduce((sum, day) => sum + day.totalMinutes, 0);
+    const totalSessions = Object.values(filteredActivities).reduce((sum, day) => sum + day.sessions, 0);
+    const avgSessionTime = totalSessions > 0 ? (totalMinutes / totalSessions).toFixed(1) : 0;
+    
+    // Update average session time display
+    document.getElementById('avgSessionTime').textContent = 
+        totalSessions > 0 ? `${avgSessionTime} minutes` : 'No data';
+    
+    // Create chart with multiple datasets
+    charts.dailyActivity = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [
+                {
+                    label: 'Session Time (mins)',
+                    data: Object.values(filteredActivities).map(day => day.totalMinutes),
+                    borderColor: '#1FB8CD',
+                    backgroundColor: 'rgba(31, 184, 205, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    yAxisID: 'y'
+                },
+                {
+                    label: 'Lecture Time (mins)',
+                    data: Object.values(filteredActivities).map(day => day.videos || 0),
+                    borderColor: '#FF6384',
+                    backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                    borderDash: [5, 5],
+                    tension: 0.4,
+                    yAxisID: 'y'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    type: 'linear',
+                    display: true,
+                    position: 'left',
+                    title: {
+                        display: true,
+                        text: 'Time (minutes)'
+                    },
+                    beginAtZero: true
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date'
+                    }
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        afterLabel: function(context) {
+                            const date = Object.keys(filteredActivities)[context.dataIndex];
+                            const dayData = filteredActivities[date];
+                            return [
+                                `Sessions: ${dayData.sessions}`,
+                                `Documents Accessed: ${dayData.docs || 0}`
+                            ].join('\n');
+                        }
+                    }
+                }
+            }
+        }
+    });
+}
+
 function showLoading() {
     loadingOverlay.classList.remove('hidden');
 }
@@ -370,6 +523,8 @@ async function fetchStudentDetails(studentId) {
         console.log('Using mock data - API not available');
         showToast('Failed to load student details. Using mock data.', 'warning');
         // Use mock data as fallback
+        console.log("ab id ayegi");
+        console.log(studentId);
         return MOCK_STUDENT_DETAILS[studentId] || null;
     } finally {
         hideLoading();
@@ -461,8 +616,8 @@ function renderStudentsGrid(students) {
                     </div>
                     <div class="student-info">
                         <h3>${student.name}</h3>
-                        <p>${student.institution || 'Institution not specified'}</p>
-                        <p class="text-sm text-secondary">${student.city || 'Location not specified'}</p>
+                        <p>${student.studentId || 'ID not specified'}</p>
+                        <p class="text-sm text-secondary">${student.email || 'Email not specified'}</p>
                     </div>
                 </div>
                 <div class="progress-bar">
@@ -479,7 +634,7 @@ function renderStudentsGrid(students) {
                     </div>
                 </div>
                 <div class="mt-16 text-sm text-secondary">
-                    Last Activity: ${formatDate(student.lastActivity)}
+                    Phone : ${formatDate(student.phone)}
                 </div>
             </div>
         </div>
@@ -489,6 +644,8 @@ function renderStudentsGrid(students) {
 // Student detail rendering
 async function loadStudentDetails(studentId) {
     currentStudent = await fetchStudentDetails(studentId);
+    console.log("ye aya student fetch hoke");
+    console.log(currentStudent);
     if (!currentStudent) {
         showToast('Student not found');
         navigateTo('/students');
@@ -523,10 +680,10 @@ function renderStudentProfile(student) {
                 <div class="detail-section">
                     <h4>Personal Information</h4>
                     <ul class="detail-list">
-                        <li><span class="label">Age:</span> <span class="value">${personal.age || 'N/A'}</span></li>
+                        <li><span class="label">DOB:</span> <span class="value">${personal.dob || 'N/A'}</span></li>
                         <li><span class="label">Gender:</span> <span class="value">${personal.gender || 'N/A'}</span></li>
-                        <li><span class="label">Education:</span> <span class="value">${personal.educationLevel || 'N/A'}</span></li>
-                        <li><span class="label">Institution:</span> <span class="value">${personal.institution || 'N/A'}</span></li>
+                        <li><span class="label">Country:</span> <span class="value">${personal.country || 'N/A'}</span></li>
+                        <li><span class="label">Phone:</span> <span class="value">${personal.phone || 'N/A'}</span></li>
                     </ul>
                 </div>
                 <div class="detail-section">
@@ -535,7 +692,7 @@ function renderStudentProfile(student) {
                         <li><span class="label">Role:</span> <span class="value">${professional.currentRole || 'N/A'}</span></li>
                         <li><span class="label">Organization:</span> <span class="value">${professional.organization || 'N/A'}</span></li>
                         <li><span class="label">Industry:</span> <span class="value">${professional.industry || 'N/A'}</span></li>
-                        <li><span class="label">Experience:</span> <span class="value">${professional.experienceYears || 0} years</span></li>
+                        <li><span class="label">Experience:</span> <span class="value">${professional.experienceYears || 'N/A'} years</span></li>
                     </ul>
                 </div>
             </div>
@@ -545,47 +702,128 @@ function renderStudentProfile(student) {
 
 function renderAcademicTab(student) {
     const container = document.getElementById('coursesContainer');
-    const courses = student.Courses || {};
-    
-    if (Object.keys(courses).length === 0) {
+    const courses = student.Courses || [];
+    console.log("le bc");
+    console.log(student);
+    if (courses.length === 0) {
         container.innerHTML = '<div class="text-center"><p>No courses found.</p></div>';
         return;
     }
     
-    container.innerHTML = Object.entries(courses)
-        .filter(([key]) => key !== 'CourseProjectGrade')
-        .map(([courseKey, course]) => {
-            const courseName = courseKey.replace(/-/g, ' ');
-            const progress = course.progress || 0;
-            const modules = course.modules || {};
-            
-            return `
-                <div class="course-card">
-                    <div class="course-header" onclick="toggleCourseModules('${courseKey}')">
-                        <h3>${courseName}</h3>
-                        <div class="course-progress">
-                            <span class="course-progress-text">${formatProgress(progress)}%</span>
-                            <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="6,9 12,15 18,9"></polyline>
-                            </svg>
-                        </div>
+    container.innerHTML = courses.map((course, index) => {
+        const progress = course.total_modules > 0 
+            ? Math.round((course.completed_modules / course.total_modules) * 100)
+            : 0;
+        
+        return `
+            <div class="course-card" style="border-left: 4px solid ${course.primary_color || '#f0f0f0'};">
+                <div class="course-header">
+                    <div class="course-title-wrapper" onclick="fetchCourseDetails('${student.idx}', '${course.course_id}', ${index})">
+                        <h3>${course.course_name}</h3>
+                        <span class="course-code">${course.course_code}</span>
                     </div>
-                    <div class="course-modules" id="modules-${courseKey}">
-                        ${Object.entries(modules).map(([moduleKey, module]) => `
-                            <div class="module-item">
-                                <div class="module-header" onclick="toggleModuleContent('${courseKey}', '${moduleKey}')">
-                                    <h4>${module.title || moduleKey}</h4>
-                                    <span class="module-progress">${formatProgress(module.progress || 0)}%</span>
-                                </div>
-                                <div class="module-content" id="content-${courseKey}-${moduleKey}">
-                                    ${renderSubModules(module.subModules || {})}
-                                </div>
-                            </div>
-                        `).join('')}
+                    <div class="course-meta">
+                        <span class="term-badge">${course.term_name}</span>
+                        <span class="date-range">${formatDate(course.start_date)} - ${formatDate(course.end_date)}</span>
+                    </div>
+                    <div class="course-progress" onclick="toggleCourseModules('course-${index}')">
+                        <span class="course-progress-text">${formatProgress(progress)}%</span>
+                        <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
                     </div>
                 </div>
-            `;
-        }).join('');
+                <div class="course-details" id="modules-course-${index}">
+                    <div class="course-info-row">
+                        <div class="course-info">
+                            <h4>Skillset</h4>
+                            <p>${course.course_skillset_name} (${course.course_skillset_code})</p>
+                        </div>
+                        <div class="course-info">
+                            <h4>Instructor</h4>
+                            <p>${course.teacher_name}</p>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" 
+                            style="width: ${progress}%; 
+                                    background-color: #2c3e50;">
+                        </div>
+                    </div>
+                    <div class="modules-summary">
+                        <span>Modules completed: ${course.completed_modules} of ${course.total_modules}</span>
+                    </div>
+                    ${renderActivities(course.activities || [])}
+                    <div id="course-details-${index}" class="course-modules-details"></div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+async function fetchCourseDetails(studentId, courseId, index) {
+    try {
+        const response = await fetch(`${API_BASE}/students/${studentId}/courses/${courseId}`);
+        
+        const data = await response.json();
+        
+        console.log("fuccccccck yeahhhh");
+        console.log(data);
+        if (data.success) {
+            renderCourseDetails(data.data, index);
+        } else {
+            console.error('Failed to fetch course details:', data.message);
+        }
+    } catch (error) {
+        console.error('Error fetching course details:', error);
+    }
+}
+
+function renderCourseDetails(courseData, index) {
+    const container = document.getElementById(`course-details-${index}`);
+    const course = courseData.courses[0]; // Assuming first course is the one we want
+    
+    container.innerHTML = `
+        <div class="course-modules-container">
+            <h4>Course Modules</h4>
+            <div class="modules-list">
+                ${course.children.map(module => `
+                    <div class="module-item">
+                        <div class="module-header" onclick="toggleModuleDetails(this)">
+                            <h5>${module.name}</h5>
+                            <span class="module-status ${module.is_completed ? 'completed' : 'incomplete'}">
+                                ${module.is_completed ? '✓' : '✗'}
+                            </span>
+                        </div>
+                        <div class="module-content">
+                            ${module.children ? `
+                                <div class="module-resources">
+                                    ${module.children.map(resource => `
+                                        <div class="resource-item">
+                                            <span class="resource-name">${resource.name}</span>
+                                            <span class="resource-meta">
+                                                ${resource.time_spent ? `${resource.time_spent} mins` : ''}
+                                                ${resource.attempted_marks ? `| Score: ${resource.attempted_marks}${resource.total_points ? `/${resource.total_points}` : ''}` : ''}
+                                            </span>
+                                            <span class="resource-status ${resource.is_completed ? 'completed' : 'incomplete'}">
+                                                ${resource.is_completed ? '✓' : '✗'}
+                                            </span>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        </div>
+    `;
+}
+
+// Add toggle functionality
+function toggleModuleDetails(header) {
+    const content = header.nextElementSibling;
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
 }
 
 function renderSubModules(subModules) {
@@ -603,21 +841,49 @@ function renderSubModules(subModules) {
 }
 
 function renderActivities(activities) {
+    // Check if activities is an array (new structure) or object (old structure)
+    if (!activities || (Array.isArray(activities) && activities.length === 0)) {
+        return '<div class="no-activities">No recent activities</div>';
+    }
+
+    // Handle the array structure from your backend
+    if (Array.isArray(activities)) {
+        // Group activities by type if needed, or just display them sequentially
+        return `
+            <div class="recent-activities">
+                <h4>Recent Activities</h4>
+                ${activities.map(activity => `
+                    <div class="activity-item">
+                        <span class="activity-dot"></span>
+                        <div class="activity-content">
+                            <p>Course activity on ${new Date(activity.updated_at).toLocaleDateString()}</p>
+                            <small>${new Date(activity.updated_at).toLocaleTimeString()}</small>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+    
+    // Fallback for old object structure (if you still need it)
     const activityTypes = Object.keys(activities);
     if (activityTypes.length === 0) return '<p class="text-sm text-secondary">No activities available</p>';
     
     return `
         <div class="activities-grid">
-            ${activityTypes.map(type => `
-                <div class="activity-group">
-                    <h5>${type}</h5>
-                    <div class="activity-scores">
-                        ${activities[type].map(score => `
-                            <span class="score-badge">${score}</span>
-                        `).join('')}
+            ${activityTypes.map(type => {
+                const items = Array.isArray(activities[type]) ? activities[type] : [activities[type]];
+                return `
+                    <div class="activity-group">
+                        <h5>${type}</h5>
+                        <div class="activity-scores">
+                            ${items.map(score => `
+                                <span class="score-badge">${score}</span>
+                            `).join('')}
+                        </div>
                     </div>
-                </div>
-            `).join('')}
+                `;
+            }).join('')}
         </div>
     `;
 }
@@ -626,6 +892,10 @@ function renderEngagementTab(student) {
     const engagement = student['engagementMetrics'] || {};
     const platform = engagement['platformEngagement'] || {};
     const content = engagement['contentInteraction'] || {};
+    
+    // Set default date range (last 7 days)
+    const defaultRange = getDateRange(7);
+    renderDailyActivityChart(student, defaultRange.startDate, defaultRange.endDate);
     
     // Platform Engagement Chart
     renderEngagementChart(platform);
@@ -793,17 +1063,32 @@ function renderFeedbackTab(student) {
 }
 
 // Interactive functions
-function toggleCourseModules(courseKey) {
-    const modules = document.getElementById(`modules-${courseKey}`);
-    const header = modules.previousElementSibling;
+// Updated toggle function for the new course structure
+function toggleCourseModules(courseId) {
+    const modulesElement = document.getElementById(`modules-${courseId}`);
+    const header = modulesElement.previousElementSibling;
+    const expandIcon = header.querySelector('.expand-icon');
     
-    if (modules.classList.contains('expanded')) {
-        modules.classList.remove('expanded');
-        header.classList.remove('expanded');
+    // Toggle expanded state
+    modulesElement.classList.toggle('expanded');
+    header.classList.toggle('expanded');
+    expandIcon.classList.toggle('expanded');
+    
+    // Smooth height transition
+    if (modulesElement.classList.contains('expanded')) {
+        modulesElement.style.maxHeight = modulesElement.scrollHeight + 'px';
     } else {
-        modules.classList.add('expanded');
-        header.classList.add('expanded');
+        modulesElement.style.maxHeight = '0';
     }
+}
+
+// You might also want to add this helper function for animations
+function animateHeight(element, from, to) {
+    element.style.transition = 'max-height 0.3s ease';
+    element.style.maxHeight = from;
+    // Force reflow to trigger the transition
+    void element.offsetHeight;
+    element.style.maxHeight = to;
 }
 
 function toggleModuleContent(courseKey, moduleKey) {
@@ -871,6 +1156,40 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
     handleRouteChange();
+    
+    // Add event listeners for the filter buttons
+    document.querySelectorAll('[data-range]').forEach(button => {
+        button.addEventListener('click', function() {
+            const days = parseInt(this.dataset.range);
+            const range = getDateRange(days);
+            document.getElementById('startDate').value = formatDateForInput(range.startDate);
+            document.getElementById('endDate').value = formatDateForInput(range.endDate);
+            if (currentStudent) {
+                renderDailyActivityChart(currentStudent, range.startDate, range.endDate);
+            }
+        });
+    });
+
+    document.getElementById('applyDateRange')?.addEventListener('click', function() {
+        const startDate = new Date(document.getElementById('startDate').value);
+        const endDate = new Date(document.getElementById('endDate').value);
+        
+        if (startDate && endDate && startDate <= endDate && currentStudent) {
+            renderDailyActivityChart(currentStudent, startDate, endDate);
+        } else {
+            showToast('Please select a valid date range', 'error');
+        }
+    });
+
+    // Initialize date inputs with default range (last 7 days)
+    const defaultRange = getDateRange(7);
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
+    
+    if (startDateInput && endDateInput) {
+        startDateInput.value = formatDateForInput(defaultRange.startDate);
+        endDateInput.value = formatDateForInput(defaultRange.endDate);
+    }
 });
 
 // Handle initial route

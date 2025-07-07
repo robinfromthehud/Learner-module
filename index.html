@@ -74,25 +74,29 @@
 
                     <!-- Engagement Tab -->
                     <div id="engagementTab" class="tab-content">
-                        <div class="charts-grid">
-                            <div class="chart-card card">
-                                <div class="card__body">
-                                    <h3>Platform Engagement</h3>
-                                    <canvas id="engagementChart" height="300"></canvas>
+                        <div class="activity-filter-container">
+                            <div class="filter-options">
+                                <button class="btn btn--outline" data-range="7">Last 7 Days</button>
+                                <button class="btn btn--outline" data-range="30">Last 30 Days</button>
+                                <button class="btn btn--outline" data-range="90">Last 90 Days</button>
+                                <div class="date-range-picker">
+                                    <input type="date" id="startDate" class="form-control">
+                                    <span>to</span>
+                                    <input type="date" id="endDate" class="form-control">
+                                    <button id="applyDateRange" class="btn btn--primary">Apply</button>
                                 </div>
                             </div>
-                            <div class="chart-card card">
-                                <div class="card__body">
-                                    <h3>Content Interaction</h3>
-                                    <canvas id="contentChart" height="300"></canvas>
-                                </div>
+                        </div>
+                        
+                        <div class="activity-summary">
+                            <div class="summary-card">
+                                <h4>Average Session Time</h4>
+                                <p id="avgSessionTime">--</p>
                             </div>
-                            <div class="chart-card card">
-                                <div class="card__body">
-                                    <h3>Session Analytics</h3>
-                                    <canvas id="sessionChart" height="300"></canvas>
-                                </div>
-                            </div>
+                        </div>
+                        
+                        <div class="activity-chart-container">
+                            <canvas id="dailyActivityChart" height="300"></canvas>
                         </div>
                     </div>
 

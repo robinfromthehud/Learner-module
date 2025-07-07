@@ -99,8 +99,8 @@ async def get_students_summary():
                 last_activity = last_activity["$date"]
             
             result.append(StudentSummary(
-                studentId=student["studentId"],
-                name=student["personalInformation"]["name"],
+                studentId=student["id"],
+                name=student["display_name"],
                 city=student["personalInformation"]["location"]["city"],
                 institution=student["personalInformation"]["institution"],
                 progress=overall_progress,

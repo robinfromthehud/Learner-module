@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bson>=0.5.10",
+    "cachetools>=6.1.0",
     "fastapi[standard]>=0.115.14",
     "pymongo>=4.13.2",
     "unicorn>=2.1.3",

@@ -818,12 +818,9 @@ select.form-control {
 }
 
 .progress-bar {
-  width: 100%;
-  height: 6px;
-  background: var(--color-secondary);
-  border-radius: var(--radius-full);
-  overflow: hidden;
-  margin-top: var(--space-8);
+    height: 100%;
+    border-radius: 4px; /* Match container radius */
+    transition: width 0.3s ease; /* Smooth animation when progress changes */
 }
 
 .progress-fill {
@@ -831,6 +828,108 @@ select.form-control {
   background: var(--color-primary);
   border-radius: var(--radius-full);
   transition: width var(--duration-normal) var(--ease-standard);
+}
+
+
+.course-modules-details {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.course-modules-container h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.module-item {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.module-header {
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module-header h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.module-status {
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.module-status.completed {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.module-status.incomplete {
+    color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.module-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.module-content.active {
+    padding: 1rem;
+    max-height: 1000px;
+}
+
+.module-resources {
+    padding: 0.5rem 0;
+}
+
+.resource-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.resource-item:last-child {
+    border-bottom: none;
+}
+
+.resource-name {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.resource-meta {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0 1rem;
+}
+
+.resource-status {
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+}
+
+.resource-status.completed {
+    color: #28a745;
+}
+
+.resource-status.incomplete {
+    color: #dc3545;
 }
 
 /* Student Detail View */
@@ -964,13 +1063,135 @@ select.form-control {
 
 .course-card {
   border: 1px solid var(--color-card-border);
+  margin-bottom: 1.5rem;
   border-radius: var(--radius-lg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: box-shadow var(--duration-fast) var(--ease-standard);
 }
 
 .course-card:hover {
   box-shadow: var(--shadow-md);
+}
+
+.term-badge {
+    background-color: #e0e0e0;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.date-range {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.modules-summary {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.recent-activities {
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+}
+
+.activity-day {
+    margin-bottom: 1rem;
+}
+
+.activity-date {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.activity-item {
+    display: flex;
+    gap: 1rem;  /* Increased gap */
+    margin-bottom: 1rem;  /* More space between items */
+    padding: 1rem;  /* More padding all around */
+    background: #f8f9fa;
+    border-radius: 6px;  /* Slightly larger radius */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);  /* Subtle shadow */
+}
+
+.activity-dot {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.activity-content p {
+    margin: 0 0 0.5rem 0;  /* More space below text */
+    font-size: 0.95em;
+}
+
+.activity-content small {
+    color: #888;
+    font-size: 0.85em;
+    display: block;
+    margin-top: 0.5rem;  /* Doubled the space */
+    padding-top: 0.5rem;
+}
+
+.no-activities {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+}
+.course-progress {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.expand-icon {
+    width: 1em;
+    height: 1em;
+    transition: transform 0.2s;
+}
+
+.expand-icon.expanded {
+    transform: rotate(180deg);
+}
+
+.course-details {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.course-details.expanded {
+    padding: 1rem;
+    max-height: 1000px;
+}
+
+.course-info-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.course-info {
+    flex: 1;
+}
+
+.progress-container {
+    width: 100%;
+    height: 8px; /* Or your preferred thickness */
+    background-color: #f0f0f0; /* Background of the container */
+    border-radius: 4px; /* Rounded corners */
+    overflow: hidden; /* Ensures the inner bar respects border-radius */
+    margin: 10px 0; /* Spacing around the progress bar */
 }
 
 .course-header {
@@ -981,11 +1202,25 @@ select.form-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .course-header h3 {
   margin: 0;
   color: var(--color-text);
+}
+
+.course-title-wrapper {
+    flex: 1;
+    min-width: 200px;
+}
+
+.course-code {
+    display: inline-block;
+    margin-left: 0.5rem;
+    font-size: 0.9em;
+    color: #666;
 }
 
 .course-progress {
@@ -1033,6 +1268,7 @@ select.form-control {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 0.2s ease;
 }
 
 .module-header h4 {
@@ -1047,8 +1283,10 @@ select.form-control {
 }
 
 .module-content {
-  display: none;
-  padding: var(--space-12);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 1rem;
 }
 
 .module-content.expanded {
@@ -1061,6 +1299,10 @@ select.form-control {
   background: var(--color-surface);
   border-radius: var(--radius-base);
   border: 1px solid var(--color-card-border);
+}
+
+.module-header.active {
+    background-color: #f0f0f0;
 }
 
 .submodule-header {
@@ -1300,4 +1542,64 @@ select.form-control {
 
 .text-secondary {
   color: var(--color-text-secondary);
+}
+
+/* Activity Filter Styles */
+.activity-filter-container {
+    margin-bottom: 20px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date-range-picker {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.date-range-picker input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Activity Summary Styles */
+.activity-summary {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.summary-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.summary-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.summary-card p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Activity Chart Styles */
+.activity-chart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
