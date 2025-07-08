@@ -714,11 +714,12 @@ function renderAcademicTab(student) {
         const progress = course.total_modules > 0 
             ? Math.round((course.completed_modules / course.total_modules) * 100)
             : 0;
-        
+    const coursedetails = fetchCourseDetails(student.idx, course.course_id, index)
+    console.log("lo priyanshi coursedetails");
         return `
             <div class="course-card" style="border-left: 4px solid ${course.primary_color || '#f0f0f0'};">
                 <div class="course-header">
-                    <div class="course-title-wrapper" onclick="fetchCourseDetails('${student.idx}', '${course.course_id}', ${index})">
+                    <div class="course-title-wrapper" >
                         <h3>${course.course_name}</h3>
                         <span class="course-code">${course.course_code}</span>
                     </div>
@@ -767,8 +768,8 @@ async function fetchCourseDetails(studentId, courseId, index) {
         
         const data = await response.json();
         
-        console.log("fuccccccck yeahhhh");
-        console.log(data);
+        console.log("hogya fetch priyanshiiiiiiiiiiii");
+        //console.log(data);
         if (data.success) {
             renderCourseDetails(data.data, index);
         } else {

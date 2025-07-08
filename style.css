@@ -1603,3 +1603,18 @@ select.form-control {
     margin-bottom: 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+
+
+.loader {
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.text-error {
+    color: #b00020;
+    text-align: center;
+    padding: 1rem;
+}
